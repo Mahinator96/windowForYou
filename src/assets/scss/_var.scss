@@ -1,0 +1,21 @@
+:root {
+	--fontSize: 16px;
+	--fontFamily: Gilroy, sans-serif;
+	--fontFamilySecond: SignPainter, serif;
+	--fontWeight: 500;
+	--lineHeight: 118.75%; /* 19/16 */
+	--containerPadding: 25px;
+
+	--colorTextMain: #000;
+	--colorTextGray: #565656;
+	--colorTextWhite: #fff;
+	--colorBgGray: #f5f5f5;
+
+	--colorRed: #FE5F49;
+	--colorRedHover: #F14028;
+	--colorSea: #009AAD;
+	--colorSeaDark: #125D74;
+}
+
+$maxWidth: 1195;
+$minWidth: 390;

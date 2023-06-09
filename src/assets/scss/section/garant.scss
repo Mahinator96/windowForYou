@@ -1,0 +1,9 @@
+.garant {
+	font-size: 24px;
+	line-height: 120.833333%; /* 29/24 */
+	margin-bottom: 102px;
+
+	@media (max-width: 740px) {
+		font-size: 20px;
+	}
+}

@@ -1,0 +1,200 @@
+.promo {
+  position: relative;
+  max-width: 1480px;
+  margin: 0 auto;
+  padding: 0 23px;
+  min-height: 540px;
+  padding-top: 73px;
+  padding-bottom: 62px;
+  color: var(--colorTextWhite);
+  margin-bottom: 102px;
+
+  @media (max-width: 1110px) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  @media (max-width: 480px) {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  // .promo::after
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url("../../assets/images/promo/promo-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    // margin: 0 23px;
+    z-index: -1;
+    border-radius: 15px;
+
+		@media (max-width: 1480px) {
+			border-radius: 0;
+		}
+    @media (max-width: 1110px) {
+      // margin: 0 15px;
+    }
+    @media (max-width: 740px) {
+      background-position: 60%;
+      // background-image: url('../../assets/images/promo/promo-bg--mobile.jpg');
+    }
+    @media (max-width: 480px) {
+      // margin: 0 8px;
+    }
+  }
+  // .promo__container
+  &__container {
+    @media (max-width: 740px) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  // .promo__title
+  &__title {
+    width: 17.747em;
+    font-weight: 600;
+    font-size: 34px;
+    line-height: 115%;
+    margin-bottom: 48px;
+
+    @media (max-width: 740px) {
+      font-size: 32px;
+      width: 80%;
+      // width: 12.7470em;
+    }
+    @media (max-width: 480px) {
+      width: 10.37em;
+      font-size: 27px;
+    }
+  }
+  // .promo__about
+  &__about {
+    display: flex;
+    justify-content: space-between;
+    max-width: 600px;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 42px;
+
+    @media (max-width: 740px) {
+      flex-direction: column;
+    }
+  }
+  // .promo__about-item
+  &__about-item {
+    position: relative;
+    padding-left: 46px;
+    flex-basis: calc(50% - 16px);
+
+    @media (max-width: 740px) {
+      min-height: 26px;
+      width: 18.75em;
+    }
+    // .promo__about-item::before
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 26px;
+      height: 26px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+    // .promo__about-item--accessories::before
+    &--accessories::before {
+      background-image: url("../../assets/images/promo/accessories.svg");
+    }
+    // .promo__about-item--factory::before
+    &--factory::before {
+      background-image: url("../../assets/images/promo/factory.svg");
+    }
+    // .promo__about-item--profiles::before
+    &--profiles::before {
+      background-image: url("../../assets/images/promo/profiles.svg");
+    }
+    // .promo__about-item--montage::before
+    &--montage::before {
+      background-image: url("../../assets/images/promo/montage.svg");
+    }
+  }
+  // .promo__text
+  &__text {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 125%; /* 25/20 */
+    margin-bottom: 42px;
+
+    @media (max-width: 740px) {
+      order: 1;
+      font-size: 18px;
+      margin-bottom: 0;
+    }
+    @media (max-width: 480px) {
+      width: 15.2em;
+    }
+  }
+  // .promo__btn
+  &__btn {
+    position: relative;
+    padding: 13px 39px 13px 77px;
+    width: fit-content;
+
+    @media (max-width: 740px) {
+      margin-bottom: 29px;
+    }
+    // .promo__btn::before
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 39px;
+      width: 24px;
+      height: 24px;
+      transform: translateY(-50%);
+      background-image: url("../../assets/images/promo/calc.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+    }
+  }
+  // .promo__label
+  &__label {
+    display: flex;
+    gap: 12px;
+    position: absolute;
+    right: 102px;
+    bottom: -1px;
+
+    @media (max-width: 1110px) {
+      right: 50px;
+    }
+    @media (max-width: 740px) {
+      display: none;
+    }
+
+    &-item {
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      background-color: #fff;
+
+      // .promo__label-item--siegenia
+      &--siegenia {
+        padding: 20px 29px 1px 29px;
+      }
+      // .promo__label-item--deceuninck
+      &--deceuninck {
+        // right: 102px;
+        padding: 16px 22px 1px 16px;
+      }
+    }
+  }
+}

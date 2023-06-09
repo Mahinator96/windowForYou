@@ -1,0 +1,31 @@
+.check {
+	position: relative;
+	width: fit-content;
+	padding: 11px 51px 11px 19px;
+	background: #FFFFFF;
+	border: 1px solid var(--colorSea);
+	border-radius: 34px;
+	// .credit__without-item::after
+	&::after {
+		content: '';
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		right: 4px;
+		width: 34px;
+		height: 34px;
+		border-radius: 50%;
+		background-color: var(--colorSea);
+	}
+
+	&--title {
+		height: fit-content;
+		font-weight: 500;
+		color: var(--colorTextWhite);
+		background-color: var(--colorSea);
+
+		&::after {
+			background-color: var(--colorSeaDark);
+		}
+	}
+}

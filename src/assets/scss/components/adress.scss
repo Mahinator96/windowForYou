@@ -1,0 +1,19 @@
+.adress {
+	// .adress__item
+	&__item {
+		display: flex;
+		flex-direction: column;
+		gap: 5px;
+		font-size: 15px;
+	}
+	// .adress__street
+	&__street {
+		line-height: 135%;
+		color: var(--colorTextGray);
+	}
+	// .adress__phone
+	&__phone {
+		font-weight: 400;
+		line-height: 120%; /* 18/15 */
+	}
+}

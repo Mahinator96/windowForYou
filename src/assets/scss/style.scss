@@ -1,0 +1,38 @@
+@import 'components/swiper.scss';
+/* SETTINGS */
+@import 'var.scss';
+@import '_fonts.scss';
+@import '_global.scss';
+@import '__mixin.scss';
+
+/* COMPONENTS */
+@import 'components/burger.scss';
+@import 'components/adress.scss';
+@import 'components/btn.scss';
+@import 'components/persona.scss';
+@import 'components/check.scss';
+@import 'components/step.scss';
+@import 'components/product.scss';
+@import 'components/form.scss';
+@import 'components/detail.scss';
+@import 'components/personaJob.scss';
+@import 'components/sliderButton.scss';
+
+/* SECTION */
+@import 'section/header.scss';
+@import 'section/promo.scss';
+@import 'section/garant.scss';
+@import 'section/team.scss';
+@import 'section/credit.scss';
+@import 'section/process.scss';
+@import 'section/question.scss';
+@import 'section/products.scss';
+@import 'section/works.scss';
+@import 'section/measuring.scss';
+@import 'section/factory.scss';
+@import 'section/manufacture.scss';
+@import 'section/warranty.scss';
+@import 'section/feedback.scss';
+@import 'section/consultation.scss';
+@import 'section/footer.scss';
+

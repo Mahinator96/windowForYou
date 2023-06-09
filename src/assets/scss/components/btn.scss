@@ -1,0 +1,20 @@
+.btn {
+	background-color: transparent;
+	border: 1px solid var(--colorRed);
+	border-radius: 34px;
+	transition: all 0.2s ease;
+
+	&:hover {
+		border-color: var(--colorRedHover);
+	}
+	
+	&--fill {
+		color: var(--colorTextWhite);
+		background-color: var(--colorRed);
+
+		&:hover {
+			background-color: var(--colorRedHover);
+		}
+	}
+	
+}

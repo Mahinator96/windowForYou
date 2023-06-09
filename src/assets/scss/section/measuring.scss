@@ -1,0 +1,27 @@
+.measuring {
+	// .measuring__clickbate
+	&__clickbate {
+		font-size: 35px;
+		line-height: 120%; /* 42/35 */
+		width: 23.2285em;
+		margin: 0 auto 71px auto;
+		text-align: center;
+
+		@media (max-width: 890px) {
+			width: 17em;
+			margin-bottom: 60px;
+		}
+		@media (max-width: 740px) {
+			font-size: 29px;
+			margin-bottom: 40px;
+		}
+		@media (max-width: 540px) {
+			font-size: 20px;
+			margin-bottom: 30px;
+		}
+	}
+	// .measuring__subtitle
+	&__subtitle {
+		margin-bottom: 28px;
+	}
+}

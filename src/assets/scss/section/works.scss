@@ -1,0 +1,42 @@
+.works {
+	margin-bottom: 102px;
+	// .works__hgroup
+	&__hgroup {
+	}
+	// .works__wrapper
+	&__wrapper {
+		display: grid;
+		grid-template-columns: 300px 1fr;
+		gap: 62px;
+
+		@media (max-width: 1110px) {
+			gap: 20px;
+		}
+		@media (max-width: 540px) {
+			display: flex;
+			flex-direction: column;
+		}
+	}
+	// .works__persona
+	&__persona {
+
+		@media (max-width: 540px) {
+			order: 1;
+		}
+	}
+	&__post {
+		margin-bottom: 0 !important;
+	}
+	// .works__slider
+	&__slider {
+		border-radius: 15px;
+		overflow: hidden;
+
+		picture {
+
+			@media (max-width: 1110px) {
+				height: 100%;
+			}
+		}
+	}
+}

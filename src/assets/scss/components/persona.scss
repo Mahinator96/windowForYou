@@ -1,0 +1,52 @@
+.persona {
+	// .persona__about
+	&__about {
+		position: relative;
+		overflow: hidden;
+		margin-bottom: 15px;
+		border-radius: 15px;
+			// .persona__about img
+		img {
+			width: 100%;
+			height: auto;
+		}
+	}
+	// .persona__text
+	&__text {
+		position: absolute;
+		right: 0px;
+		bottom: 0px;
+		width: 15.125em;
+		padding: 18px 34px 13px 33px;
+		line-height: 125%;
+		background-color: var(--colorBgGray);
+		border-top-left-radius: 15px;
+		border-bottom-right-radius: 15px;
+
+		@media (max-width: 890px) {
+			padding: 18px 0px 13px 5px;
+		}
+	}
+	// .persona__name
+	&__name {
+		font-size: 24px;
+		line-height: 120.833333%; /* 29/24 */
+		font-weight: 500;
+		margin-bottom: 6px;
+	}
+	// .persona__post
+	&__post {
+		font-weight: 400;
+		color: var(--colorTextGray);
+		margin-bottom: 22px;
+	}
+	// .persona__btn
+	&__btn {
+		padding: 14px 30px;
+
+		&--big {
+			grid-column-start: span 2;
+			padding: 14px 30px;
+		}
+	}
+}

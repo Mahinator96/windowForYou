@@ -1,0 +1,106 @@
+.warranty {
+  margin-bottom: 100px;
+  // .warranty__hgroup
+  &__hgroup {
+    margin-bottom: 45px;
+    gap: 27px 186px;
+
+    @media (max-width: 890px) {
+      flex-direction: column;
+    }
+    @media (max-width: 540px) {
+      margin-bottom: 18px;
+    }
+  }
+	// .waranty__subtitle
+	& .waranty__subtitle {
+		margin-bottom: 0 !important;
+	}
+  // .warranty__wrapper
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 293px 1fr;
+    gap: 25px 65px;
+    margin-bottom: 70px;
+
+    @media (max-width: 890px) {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 25px;
+    }
+  }
+  // .warranty__img
+  // &__img {
+  & picture {
+    grid-row: 1 / 3;
+
+    @media (max-width: 540px) {
+      order: 2;
+    }
+    // flex-basis: 293px;
+  }
+  // .warranty__years
+  &__years {
+    font-size: 18px;
+    line-height: 135%;
+    font-weight: 400;
+    // .warranty__years-list
+    &-list {
+      // margin-bottom: 25px;
+      list-style: disc;
+
+      @media (max-width: 540px) {
+        order: 1;
+      }
+    }
+    // .warranty__years-item
+    &-item {
+      margin-left: 28px;
+    }
+  }
+  // .warranty__text
+  &__text {
+    margin-top: auto;
+    grid-column: 2 / 3;
+
+    @media (max-width: 540px) {
+      order: 3;
+    }
+  }
+  // .warranty__marriage
+  &__marriage {
+    display: flex;
+    gap: 18px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 38px 84px 38px 54px;
+    // background-color: var(--colorBgGray);
+    border-radius: 15px;
+
+    @media (max-width: 1110px) {
+      padding: 0;
+    }
+    @media (max-width: 890px) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    // .warranty__marriage-subtitle
+    &-subtitle {
+      width: 22.25em;
+      font-size: 24px;
+      line-height: 120.833333%; /* 29/24 */
+
+      @media (max-width: 1110px) {
+        font-size: 20px;
+      }
+      @media (max-width: 540px) {
+        width: auto;
+      }
+    }
+    // .warranty__marriage-text
+    &-text {
+      width: 19.1875em;
+    }
+  }
+}

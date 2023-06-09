@@ -1,0 +1,140 @@
+.header {
+	margin-bottom: 34px;
+	// .header__wrapper
+	&__wrapper {
+		display: flex;
+		flex-direction: column;
+		gap: 22px;
+	}
+	// .header__top
+	&__top {
+		background-color: var(--colorBgGray);
+
+		@media (max-width: 740px) {
+			display: none;
+		}
+		
+		// .header__top-wrapper
+		&-wrapper {
+			min-height: 119px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			gap: 50px;
+
+			@media (max-width: 1110px) {
+				justify-content: center;
+			}
+		}
+	}
+	// .header__bottom
+	&__bottom {
+
+		@media (max-width: 1110px) {
+			padding-top: 20px;
+			padding-bottom: 20px;
+		}
+		// .header__bottom-wrapper
+		&-wrapper {
+			display: flex;
+			align-items: center;
+			gap: 35px;
+
+			@media (max-width: 1110px) {
+				justify-content: space-between;
+			}
+			@media (max-width: 740px) {
+				gap: 20px;
+			}
+		}
+		// .header__bottom-logo
+		&-logo {
+
+		}
+		// .header__bottom-nav
+		&-nav {
+			flex-grow: 1;
+
+			@media (max-width: 1110px) {
+				flex-grow: 0;
+			}
+			// .header__bottom-nav--compact
+			&--compact {
+				position: relative;
+				display: none;
+
+				@media (max-width: 1110px) {
+					display: flex;
+					gap: 32px;
+				}
+			}
+		}
+		// .header__bottom-nav
+		&-nav {
+			
+			@media (max-width: 1110px) {
+				display: none;
+			}
+		}
+		// .header__bottom-list
+		&-list {
+			display: flex;
+			justify-content: space-between;
+			gap: 10px;
+			
+			// .header__bottom-list--compact
+			&--compact {
+				position: relative;
+				display: none;
+
+				@media (max-width: 1110px) {
+					display: block;
+				}
+			}
+		}
+		// .header__bottom-title
+		&-title {
+			margin-bottom: 14px;
+		}		
+		// .header__bottom-link
+		&-link {
+			transition: color 0.2s ease;
+			// .header__bottom-link:hover
+			&:hover {
+				color: var(--colorRed);
+			}
+		}		
+    // .header__bottom-btn
+		&-btn {
+			display: none;
+			padding: 10px 40px;
+			width: fit-content;
+
+			@media (max-width: 1110px) {
+				display: block;
+			}
+
+			@media (max-width: 740px) {
+				font-size: 14px;
+			}
+		}
+	}
+	// .header__adress
+	&__adress {
+		display: flex;
+		gap: 60px;
+	}
+	// header__btn-box
+	&__btn-box {
+		display: flex;
+		gap: 20px;
+
+		@media (max-width: 1110px) {
+			display: none;
+		}
+
+	}
+	&__btn {
+		padding: 10px 23px;
+	}
+}

@@ -1,0 +1,32 @@
+.detail {
+	display: flex;
+	align-items: center;
+	gap: 37px;
+	padding-right: 10px;
+	background: var(--colorSea);
+	border-radius: 15px;
+
+	@media (max-width: 1110px) {
+		gap: 24px;
+	}
+	// .detail-img
+	&-img {
+		align-self: flex-end;
+		max-width: 170px;
+		width: 100%;
+		border-radius: 15px;
+	}
+	// .detail__text
+	&-text {
+		width: 10.8em;
+		font-size: 18px;
+		line-height: 122.222222%; /* 22/18 */
+
+		@media (max-width: 1110px) {
+			font-size: 15px;
+		}
+		@media (max-width: 740px) {
+			width: auto;
+		}
+	}
+}
