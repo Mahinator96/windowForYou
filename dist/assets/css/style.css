@@ -2119,7 +2119,6 @@ picture img {
 
 @media (max-width: 890px) {
     .team__list {
-        display: none;
         gap: 0;
     }
 }
@@ -2130,12 +2129,6 @@ picture img {
 
 .team__list-wrapper {
     display: none;
-}
-
-@media (max-width: 890px) {
-    .team__list-wrapper {
-        display: flex;
-    }
 }
 
 .team__list-wrapper .swiper-notification {
