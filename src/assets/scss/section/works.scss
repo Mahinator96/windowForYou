@@ -1,26 +1,28 @@
 .works {
 	margin-bottom: 102px;
-	// .works__hgroup
-	&__hgroup {
-	}
 	// .works__wrapper
 	&__wrapper {
-		display: grid;
-		grid-template-columns: 300px 1fr;
+		display: flex;
+		// display: grid;
+		// grid-template-columns: 300px 1fr;
 		gap: 62px;
 
 		@media (max-width: 1110px) {
 			gap: 20px;
 		}
-		@media (max-width: 540px) {
+		@media (max-width:740px) {
 			display: flex;
 			flex-direction: column;
 		}
 	}
 	// .works__persona
 	&__persona {
-
-		@media (max-width: 540px) {
+		max-width: 300px;
+		width: 100%;
+		flex-shrink: 1;
+		
+		@media (max-width: 740px) {
+			max-width: none;
 			order: 1;
 		}
 	}
@@ -29,13 +31,83 @@
 	}
 	// .works__slider
 	&__slider {
+		display: flex;
 		border-radius: 15px;
-		overflow: hidden;
 
-		picture {
+		@media (max-width: 740px) {
+			display: grid;
+			// grid-template-columns: repeat(1, 1fr);
+			// grid-auto-columns: 1fr;
+			grid-auto-flow: column;
+		}
+		// .works__slider-wrapper
+		&-wrapper {
+			position: relative;
+			flex-shrink: 2;
+			border-radius: 15px;
+			overflow: hidden;
+		}
+		// .works__slider-item
+		&-item {
+			display: flex;
+			max-height: 379px;
+			height: 100%;
+			border-radius: 15px;
+			overflow: hidden;
 
-			@media (max-width: 1110px) {
-				height: 100%;
+			@media (max-width: 740px) {
+				max-height: 314px;
+			}
+			// .works__slider-item picture
+			picture {
+				width: 100%;
+			}
+		}
+		// .works__slider-button
+		&-button {
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			width: 16px;
+			height: 16px;
+			background-image: url('../images/works/arrow.svg');
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: contain;
+			z-index: 2;
+			// .works__slider-button-prev
+			&-prev {
+				left: 20px;
+			}
+			// .works__slider-button-next
+			&-next {
+				transform: translateY(-50%) rotate(180deg);
+				right: 20px;
+			}
+		}
+		// .works__slider-button-pagination
+		&-pagination {
+			position: absolute;
+			// width: fit-content;
+			text-align: center;
+			z-index: 2;
+
+			.swiper-pagination-bullet {
+				background-color: var(--colorRed);
+				opacity: 1;
+				
+				&-active {
+					background-color: var(--colorTextWhite);
+				}
+			}
+		}
+		// .works__slider-img
+		&-img {
+			width: 100%;
+			border-radius: 15px;
+			height: auto;
+
+			@media (max-width: 740px) {
 			}
 		}
 	}

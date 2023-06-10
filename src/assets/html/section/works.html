@@ -27,12 +27,41 @@
 				<h4 class="persona__post works__post">мастер по ремонту и монтажу окон ПВХ</h4>	
 			</div>
 
-			<div class="works__slider">
-				<picture>
-					<source srcset='assets/images/works/slider1.avif' type='image/avif' width='783' height='364' alt='Фото работы'>
-					<source srcset='assets/images/works/slider1.webp' type='image/webp' width='783' height='364' alt='Фото работы'>
-					<img src='assets/images/works/slider1.jpg' width='783' height='364' alt='Фото работы'>
-				</picture>
+			<div class="works__slider-wrapper">
+				<ul class="works__slider swiper-wrapper">
+					<li class="works__slider-item swiper-slide">
+						<picture>
+							<source srcset='assets/images/works/slider1.avif' type='image/avif' width='783' height='364' alt='Фото работы'>
+							<source srcset='assets/images/works/slider1.webp' type='image/webp' width='783' height='364' alt='Фото работы'>
+							<img src='assets/images/works/slider1.jpg' width='783' height='364' alt='Фото работы'>
+						</picture>
+							<!-- <img class="works__slider-img" src='assets/images/works/slider1.jpg' width='783' height='364' alt='Фото работы'> -->
+					</li>
+
+					<li class="works__slider-item swiper-slide">
+						<picture>
+							<source srcset='assets/images/works/slider2.avif' type='image/avif' width='783' height='364' alt='Фото работы'>
+							<source srcset='assets/images/works/slider2.webp' type='image/webp' width='783' height='364' alt='Фото работы'>
+							<img src='assets/images/works/slider2.jpg' width='783' height='364' alt='Фото работы'>
+						</picture>
+							<!-- <img class="works__slider-img" src='assets/images/works/slider2.jpg' width='783' height='364' alt='Фото работы'> -->
+					</li>
+					
+					<li class="works__slider-item swiper-slide">
+						<picture>
+							<source srcset='assets/images/works/slider3.avif' type='image/avif' width='783' height='364' alt='Фото работы'>
+							<source srcset='assets/images/works/slider3.webp' type='image/webp' width='783' height='364' alt='Фото работы'>
+							<img src='assets/images/works/slider3.jpg' width='783' height='364' alt='Фото работы'>
+						</picture>
+							<!-- <img class="works__slider-img" src='assets/images/works/slider3.jpg' width='783' height='364' alt='Фото работы'> -->
+					</li>
+				</ul>
+
+				<div class="works__slider-pagination"></div>
+
+				<!-- If we need navigation buttons -->
+				<div class="works__slider-button works__slider-button-prev"></div>
+				<div class="works__slider-button works__slider-button-next"></div>
 			</div>
 		</div>
 	</div>
