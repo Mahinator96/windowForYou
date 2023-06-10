@@ -780,6 +780,10 @@ body._lock::after {
     background-color: rgba(0, 0, 0, 0.4);
 }
 
+body._lock .body-wrapper {
+    overflow: hidden;
+}
+
 .body-wrapper {
     display: flex;
     flex-direction: column;

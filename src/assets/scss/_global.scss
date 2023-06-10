@@ -6,8 +6,6 @@ html {
   box-sizing: inherit;
 }
 body {
-  // display: flex;
-  // flex-direction: column;
   color: var(--colorTextMain);
   font-size: var(--fontSize);
   font-family: var(--fontFamily);
@@ -31,6 +29,10 @@ body {
       right: 0;
       background-color: rgba(#000, 0.4);
     }
+
+		.body-wrapper {
+			overflow: hidden;
+		}
   }
 }
 .body-wrapper {
