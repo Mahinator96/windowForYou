@@ -1,4 +1,5 @@
 .persona {
+	position: relative;
 	// .persona__about
 	&__about {
 		position: relative;
@@ -22,10 +23,6 @@
 		background-color: var(--colorBgGray);
 		border-top-left-radius: 15px;
 		border-bottom-right-radius: 15px;
-
-		@media (max-width: 890px) {
-			padding: 18px 0px 13px 5px;
-		}
 	}
 	// .persona__name
 	&__name {
@@ -45,7 +42,7 @@
 		padding: 14px 30px;
 
 		&--big {
-			grid-column-start: span 2;
+			position: absolute;
 			padding: 14px 30px;
 		}
 	}
