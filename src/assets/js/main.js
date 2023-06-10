@@ -3,9 +3,9 @@
 */
 
 //= components/var.js
-/* //= components/function.j */
-/* //= components/header.js */
-/* // = components/works.js */
+//= components/function.js
+//= components/header.js
+// = components/works.js
 //= components/process.js
-/* //= components/factory.js */
-/* // = components/team.js */
+//= components/factory.js
+// = components/team.js
