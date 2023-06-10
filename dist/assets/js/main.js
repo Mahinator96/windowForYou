@@ -23,7 +23,19 @@ burgerClose.addEventListener('click', () => {
 })
 
 console.log('hi');
-// = components/works.js
+const worksSlider = new Swiper('.works__slider-wrapper', {
+	direction: 'horizontal',
+	slidesPerView: 1,
+	spaceBetween: 20,
+	navigation: {
+		nextEl: '.works__slider-button-next',
+		prevEl: '.works__slider-button-prev',
+	},
+	pagination: {
+    el: '.works__slider-pagination',
+    type: 'bullets',
+  },
+})
 const swiper = new Swiper('.swiper', {
 	direction: 'horizontal',
 	slidesPerView: 1,
