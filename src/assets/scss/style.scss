@@ -6,6 +6,7 @@
 @import '__mixin.scss';
 
 /* COMPONENTS */
+@import 'components/btnClose.scss';
 @import 'components/burger.scss';
 @import 'components/adress.scss';
 @import 'components/btn.scss';
@@ -17,6 +18,7 @@
 @import 'components/detail.scss';
 @import 'components/personaJob.scss';
 @import 'components/sliderButton.scss';
+@import 'components/modal.scss';
 
 /* SECTION */
 @import 'section/header.scss';

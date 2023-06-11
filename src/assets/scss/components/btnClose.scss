@@ -1,0 +1,25 @@
+.btn__close {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+
+	&::after,
+	&::before {
+		content: '';
+		position: absolute;
+		width: 100%;
+		height: 1px;
+		background-color: var(--colorTextMain);
+	}
+
+	&::before {
+		transform: translate(0px, 0px) rotate(45deg);
+	}
+
+	&::after {
+		transform: translate(0px, 0px) rotate(-45deg);
+	}
+}
