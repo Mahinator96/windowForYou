@@ -9,3 +9,4 @@
 /* //= components/process.js */
 /* //= components/factory.js */
 /* //= components/team.js */
+//= components/modal.js

@@ -46,12 +46,19 @@
 		gap: 9px;
 		// .footer__nav-item
 		&-item {
+			transition: color 0.2s ease;
+			
 			// .footer__nav-item--title
 			&--title {
 			}
 		}
 		// .footer__nav-link
 		&-link {
+			transition: color 0.2s ease;
+			// .footer__nav-link:hover
+			&:hover {
+				color: var(--colorRed);
+			}
 		}
 	}
 	// .footer__company
@@ -67,6 +74,11 @@
 		}
 		// .footer__company-link
 		&-link {
+			transition: color 0.2s ease;
+			// .footer__company-link:hover
+			&:hover {
+				color: var(--colorRed);
+			}
 		}
 	}
 	// .footer__adress
